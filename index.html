@@ -1,79 +1,653 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Découvrir Tailwind CSS</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Recettes italiennes</title>
+    
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
-  <!-- Header -->
-  <header class="bg-blue-600 text-white py-6">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h1 class="text-4xl font-bold">Découvrir Tailwind CSS</h1>
-      <p class="mt-2 text-lg">Tout ce que vous devez savoir pour maîtriser Tailwind CSS et ses particularités.</p>
-    </div>
-  </header>
-
-  <!-- Section 1: Qu'est-ce que Tailwind CSS ? -->
-  <section class="py-12">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold text-blue-700">Qu'est-ce que Tailwind CSS ?</h2>
-      <p class="mt-4 text-lg text-gray-700">Tailwind est un framework CSS utilitaire qui permet une grande flexibilité et un style personnalisé rapide pour les sites web.</p>
-      <div class="mt-8 flex justify-center">
-        <img src="https://source.unsplash.com/featured/?coding" alt="Coding image" class="w-full max-w-lg rounded-lg shadow-lg">
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 2: Comment fonctionne Tailwind CSS ? -->
-  <section class="py-12 bg-blue-50">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-center text-blue-700">Comment fonctionne Tailwind CSS ?</h2>
-      <div class="mt-6 text-lg text-gray-700">
-        <p>Tailwind CSS se base sur des <span class="font-semibold">classes utilitaires</span> qui permettent de styliser les éléments rapidement et de manière personnalisée. Par exemple :</p>
-        <ul class="mt-4 space-y-2">
-          <li><span class="bg-gray-200 px-2 py-1 rounded">p-4</span> pour la marge intérieure</li>
-          <li><span class="bg-gray-200 px-2 py-1 rounded">bg-blue-500</span> pour le fond bleu</li>
-          <li><span class="bg-gray-200 px-2 py-1 rounded">text-center</span> pour centrer le texte</li>
+<body class="absolute inset-0 bg-white bg-opacity-40"> 
+<div class="relative w-25% min-h-screen bg-contain bg-center" style="background-image: url('Logo%20resto.png');">
+   
+    <nav>
+        <ul>
+          <li><a href="#Entrées">Entrées italiennes</a></li>
+          <li><a href="#Plats">Plats italiens</a></li>
+          <li><a href="#Desserts">Desserts italiens</a></li>
+          <li><a href="#Boissons">Boissons italiennes</a></li>
+          <li><a href="#Contacts">Contacts</a></li>
         </ul>
-        <div class="mt-8 bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="font-semibold text-blue-600">Exemple :</h3>
-          <p class="mt-2">Voici un bouton stylisé avec Tailwind :</p>
-          <button class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300">Bouton Tailwind</button>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
+        
+    
+        <!-- Contenu principal -->
+        <div class="relative p-8 text-green-800">
+            <h1 class="text-4xl font-bold text-center mb-8" id="Entrées">Les spécialités italiennes</h1>
+            
+            <!-- Affichage des images -->
+            <div class="flex flex-col items-center space-y-4">
+                
+                <img src="Logo%20resto.png" alt="Logo du restaurant" class="w-1/3">
+                <strong>Les entrées</strong>
+                <a href="Entrées italiennes">Entrées italiennes</a>
+                <br>
+                <img src="Minestrone%20de%20macaronis.png" alt="Minestrone" class="w-1/2">
+                
+                <!-- Recette 1 -->
+                <div class="text-left max-w-lg">
+                    <h2 class="text-2xl font-bold mt-8">Minestrone de macaronis</h2>
+                
+                    <strong>Ingrédients</strong>
+                    <p>
+                        Macaroni court(s) : 150 g<br>
+                        Parmesan râpé : 100 g<br>
+                        Courgettes : 2<br>
+                        Tomates : 2<br>
+                        Haricots blancs : 100 g<br>
+                        Carottes : 2<br>
+                        Poireau : 1<br>
+                        Bouillon de bœuf : 2 cubes<br>
+                        Ail : 2 gousses<br>
+                        Bouquet garni : 1<br>
+                        Basilic : 12 feuilles<br>
+                        Céleri rave : 0,25 boule<br>
+                        Huile d'olive : 4 c. à soupe<br>
+                        Eau : 1,5 l<br>
+                        Sel, poivre
+                    </p>
 
-  <!-- Section 3: Différences entre Tailwind et Bootstrap -->
-  <section class="py-12">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-center text-blue-700">Différences avec Bootstrap</h2>
-      <p class="mt-4 text-lg text-gray-700">Tailwind et Bootstrap ont des approches différentes. Tailwind se concentre sur les <span class="font-semibold">classes utilitaires</span>, tandis que Bootstrap fournit des <span class="font-semibold">composants préfabriqués</span>. Choisissez l'un ou l'autre selon vos besoins de design.</p>
-      <div class="mt-8 flex flex-col md:flex-row md:justify-around space-y-4 md:space-y-0">
-        <div class="bg-blue-100 p-6 rounded-lg shadow-md text-center">
-          <h3 class="text-xl font-semibold text-blue-700">Avantages de Tailwind</h3>
-          <p class="mt-4">Flexible, personnalisable, parfait pour un design sur-mesure.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
-          <h3 class="text-xl font-semibold text-gray-700">Avantages de Bootstrap</h3>
-          <p class="mt-4">Rapide à mettre en œuvre avec des composants prêts à l'emploi.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+                    <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+                    <ol class="list-decimal list-inside">
+                        <li>La veille, faites tremper les haricots blancs dans un saladier d'eau froide.</li>
+                        <br>
+                        <li>Le lendemain, faites-les cuire 30 min puis égouttez.</li>
+                        <br>
+                        <li>Préparez le bouillon avec les cubes et l'eau.</li>
+                        <br>
+                        <li>Épluchez et lavez les légumes, puis coupez-les en dés.</li>
+                        <br>
+                        <li>Faites revenir tous les légumes dans un faitout pendant 5 min.</li>
+                        <br>
+                        <li>Ajoutez haricots, ail, basilic, bouquet garni, bouillon. Laissez cuire 40 min.</li>
+                        <br>
+                        <li>Ajoutez les macaronis 10 min avant la fin de la cuisson.</li>
+                        <br>
+                        <li>Servez avec du parmesan râpé.</li>
+                    </ol>
+                </div>
 
-  <!-- Footer -->
-  <footer class="bg-blue-600 text-white py-4">
-    <div class="max-w-5xl mx-auto text-center">
-      <p>&copy; 2024 - Tout sur Tailwind CSS | Site d'information</p>
-    </div>
-  </footer>
+                <!-- Autre recette avec une image -->
+                <img src="Culurgiones.png" alt="Culurgiones" class="w-1/2">
+                <div class="text-left max-w-lg">
+                    <h2 class="text-2xl font-bold mt-8">Culurgiones</h2>
+                    <strong>Ingrédients</strong>
+                    <br>
+                 <strong>Pour la pâte à ravioles :</strong>
+                 <p>
+                Farine de blé dur 200 g <br>
+                Œuf(s) 1 <br>
+                Eau tiède 75 cl <br>
+                Huile d'olive 1 c. à café <br>
+                Sel 0,5 c. à soupe <br>
+                Poivre <br>
+                <strong>Pour la farce:</strong>
+                Pomme de terre à chair farineuse 450 g <br>
+                Pecorino sarde 200 g <br>
+                Menthe fraîche <br>
+                Ail 1 gousse(s) <br>
+                Sel, poivre <br>
+               <strong>Pour la sauce tomate :</strong>
+                Tomate(s) pelée(s) 3 boîte(s) <br>
+                Oignon(s) 1 <br>
+                Ail 1 gousse(s) <br>
+                Sucre 1 pincée(s) <br>
+                Persil 1 c. à soupe <br>
+                Basilic 1 c. à soupe <br>
+                Huile d'olive extra vierge 6 c. à soupe <br>
+                Sel, poivre <br>
+                 </p>
 
+                 <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+                 <ol class="list-decimal list-inside">
+                       <li>Préparez la pâte</li>
+                       <br>
+                       <li>Versez la farine dans un saladier (ou dans le bol d'un robot) et faites-y un puits.</li>
+                       <br>
+                       <li>Cassez l'oeuf dans le puits, ajoutez l’eau petit-à-petit, puis l’huile, le sel et le poivre.</li>
+                       <br>
+                       <li>Formez à la main (ou au robot) une boule, filmez et laissez reposer 30 min.</li>
+                       <br>
+                       <li>Préparez la farce:</li>
+                       <br>
+                       <li>Pendant ce temps, faites cuire les pommes de terre dans de l’eau salée.</li>
+                       <br>
+                       <li>Émincez la menthe, épluchez et hachez la gousse d'ail.</li>
+                       <br>
+                       <li>Une fois les pommes de terre cuites, épluchez-les et passez-les au presse-purée.Incorporez le fromage râpé, la menthe et l'ail</li>
+                       <br>
+                       <li>Assaisonnez et réservez.</li>
+                       <br>
+                       <li>Préparez la sauce :</li>
+                       <br>
+                       <li>Dans une poêle huilée et bien chaude, faites suer les oignons et l'ail. Versez la boite de tomates et écrasez le tout avec une cuillere en bois.</li>
+                       <br>
+                       <li>Assaisonnez modérément et faites cuire à feu doux pendant env. 45 min. jusqu'à ce que la sauce commence à réduire.</li>
+                       <br>
+                       <li>Remuez de temps en temps.</li>
+                       <br>
+                       <li>A la fin, salez, poivrez et ajoutez le persil et le basilic.</li>
+                       <br>
+                       <li>Montez les ravioles :</li>
+                       <br>
+                       <li>Abaissez la pâte à ravioles.</li>
+                       <br>
+                       <li>Découpez des cercles de pâte à l’emporte-pièce.</li>
+                       <br>
+                       <li>Déposez au centre des cercles une grosse cuillère à café de farce. Repliez les côtés et façonnez-les.</li>
+                       <br>
+                       <li>Farinez-les.</li>
+                       <br>
+                       <li>Ensuite, faites-les cuire dans une grande quantité d’eau salée.</li>
+                       <br>
+                       <li>Une fois qu’ils remontent à la surface, prolongez la cuisson pendant 1 min. et égouttez-les délicatement.</li>
+                       <br>
+                       <li>Servez chaud avec la sauce tomate.</li>
+                       <br>
+                       <li>Vous pouvez décorer avec peu de menthe hachée, du pecorino râpé, une pincée de fleur de sel et un trait d'huile d’olive.</li>
+                 </ol>
+<br>
+<div id="Plats">
+         <strong>Les plats</strong> 
+</div>    
+  <br>          
+<img src="escalope milanaise.jpg" alt="plat italien" class="w-1/2">
+<div class="text-left max-w-lg">
+    <h2 class="text-2xl font-bold mt-8">Escalope à la milanaise</h2>  
+    <strong>Ingrédients</strong>
+    <p>
+    sel <br>
+    poivre <br>
+    farine <br>
+    beurre <br>
+    vinaigre balsamique <br>
+    tomates 3 <br>
+    escalopes de veau 2 <br>
+    chapelure <br>
+    parmesan râpé <br>
+    oeuf 1 <br>
+    citron 1 <br>
+    roquette <br>
+    basilic (frais de préférence) <br>
+    </p>
+
+ <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+<ol class="list-decimal list-inside">
+    <li>Couper les escalopes en 4 (si elles ne sont pas assez fines, les aplatir au rouleau à patisserie entre 2 feuilles de film alimentaire).</li>
+    <br>
+    <li>Mettre de la farine dans une assiette, l'oeuf battu avec sel et poivre dans une seconde assiette et enfin un mélange à parts égales parmesan râpé/chapelure dans une troisième assiette.</li>
+    <br>
+    <li>Passer les morceaux d'escalope dans la farine (enlever l'excédent de farine si besoin) puis dans l'oeuf battu et dans le mélange parmesan/chapelure.</li>
+    <br>
+    <li>Repasser une seconde fois les escalopes dans l'oeuf et dans le mélange chapelure/parmesan.</li>
+    <br>
+    <li>Mettre les escalopes au frigo pour 15 minutes (c'est très important sinon la croûte ne tiendra pas à la cuisson).</li>
+    <br>
+    <li>Couper les tomates épépinées en petits dés.</li>
+    <br>
+    <li>Les assaisoner d'huile d'olive, de sel et d'un filet de vinaigre balsamique. </li>
+    <br>
+    <li>Faire chauffer un mélange beurre/huile d'olive dans une poêle.</li>
+    <br>
+    <li>Quand la poêle est bien chaude, faire saisir les escalopes des 2 côtés.</li>
+    <br>
+    <li>Quand elles sont bien dorées, baisser le feu et laisser cuire encore 5 minutes.</li>
+    <br>
+    <li>Disposer les escalopes sur les assiettes.</li>
+    <br>
+    <li>Parsemer les dés de tomates (sans trop de jus) et décorer avec de la roquette.</li>
+    <br>
+    <li>Verser un filet de jus de citron et déguster.</li>
+</ol>
+
+<img src="Pesce-all-acqua-pazza.jpg" alt="Plat italien" class="w-1/2">
+<div class="text-left max-w-lg">
+    <h2 class="text-2xl font-bold mt-8">Pesce-all-acqua-pazza</h2>  
+    <strong>Ingrédients</strong>
+    <p>
+        700 g de filets d'églefin <br>
+        500 g de palourdes rincées et égouttées <br>
+        2 cuillère(s) à soupe d'huile d'olive <br>
+        12,5 cl de vin blanc sec <br>
+        4 gousses d'ail émincées <br>
+        2 cuillère(s) à soupe de persil ciselé <br>
+        1/2 cuillère(s) à café de flocons de piment <br>
+        1/2 boîte de tomates concassées <br>
+        sel <br>
+        poivre <br>
+    </p>
+
+<h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+<ol class="list-decimal list-inside">
+    <li>Faites bouillir 80 cl d’eau avec l’huile d’olive dans une grande casserole. Salez, poivrez, puis ajoutez le vin, l’ail, le persil (réservez-en un peu), le piment et les tomates concassées. Laissez mijoter un peu à feu doux.</li>
+    <br>
+    <li>Coupez l’églefin en petits tronçons égaux et plongez-les dans la casserole avec les palourdes. Faites cuire environ 5 mn (selon la grosseur des morceaux).</li>
+    <br>
+    <li>Récupérez les morceaux de poisson et disposez-les dans des assiettes creuses chaudes. Si les palourdes ne sont pas complètement ouvertes, laissez-les cuire un peu plus à feu vif.</li>
+    <br>
+    <li>Retirez la casserole du feu, versez les coquillages et le bouillon chaud dans les assiettes. Servez aussitôt, parsemé du reste de persil, avec des tranches de pain grillées ou des pommes de terre à l’eau.</li>
+</ol>
+<br>
+            
+            <strong>Les desserts</strong>
+            </div>
+            <br>
+<img src="tiramisu.png" alt="dessert italien" class="w-1/2">
+<div class="text-left max-w-lg">
+    <h2 class="text-2xl font-bold mt-8" id="Desserts">Tiramisu</h2>  
+    <strong>Ingrédients</strong>
+    <p>
+        250 g. de Mascarpone Galbani <br>
+        3 Oeufs <br>
+        50 g. de Sucre <br>
+        1 verre(s) de Café <br>
+        Amaretto ou Rhum <br>
+        1 paquet(s) de Biscuits boudoirs <br>
+        Cacao en poudre <br>
+    </p>
+
+    <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+<ol class="list-decimal list-inside">
+
+   <li> Commencez par séparer le blanc des jaunes d’œufs.</li>
+   <br>
+   <li>Dans un saladier, battez de façon vive le sucre en poudre avec les jaunes d’œuf jusqu’à ce que le mélange blanchisse.
+
+    Privilégiez le sucre roux pour un tiramisu encore plus savoureux.</li>
+    <br>
+    <li>une fois bien mélangé, ajoutez le Mascarpone Galbani. Mélangez-bien jusqu’à obtenir une surface lisse. Réservez le mélange au frais.</li>
+    <br>
+    <li>Montez les blancs en neige en les battants vivement à l’aide d’un fouet et incorporez-les délicatement avec une spatule à la préparation mascarpone et jaunes d’œufs réalisée lors de l’étape précédente de l’opération.</li>
+    <br>
+    <li>Pour rendre vos blancs en neige bien ferme, ajoutez-y une pincée de sel.</li>
+    <br>
+    <li>Déposez la moitié des biscuits imbibés de café fort rapidement et éventuellement une cuillère d’Amaretto, sur le fond d’un plat pour constituer la première couche.</li>
+    <br>
+    <li>Recouvrez les biscuits d’une couche de crème au mascarpone avec la moitié de la préparation.</li>
+    <br>
+    <li>Disposez une deuxième et dernière couche de biscuits boudoirs imbibés de café.</li>
+    <br>
+    <li>Recouvrez avec la dernière couche de crème mascarpone, soit la deuxième moitié de la préparation.</li>
+    <br>
+    <li>Placez au réfrigérateur pendant 4 heures minimum (idéalement 24h), le temps qu’il prenne bien au froid.</li>
+    <br>
+    <li>Avant de servir, saupoudrez le tiramisu de cacao amer ou de copeaux de chocolat </li>
+    </ol>
+    <br>
+    <img src="Cannolis italiens.jpg" alt="dessert italien" class="w-1/2">
+<div class="text-left max-w-lg">
+    <h2 class="text-2xl font-bold mt-8">Cannolis</h2>  
+    <strong>Ingrédients</strong>
+    <p>
+       <strong> Crème de ricotta :</strong>
+         450 g de ricotta <br>
+         100 g de sucre en poudre <br>
+         2 citrons <br>
+        1 sachet de sucre vanillé <br>
+        - 150 g de fruits confits <br>
+        
+       <strong> Pâte croquante : </strong>
+       <br>
+         350 g de farine <br>
+         50 g de beurre <br>
+         1 œuf <br>
+         10 g de sucre en poudre <br>
+         1 cuillère à café de cannelle <br>
+         1 cuillère à soupe de cacao <br>
+         1 pincée de sel <br>
+         Huile de friture <br>
+        
+       <strong> Décoration : </strong>
+       <br>
+         Quelques oranges confites <br>
+         Sucre glace <br>
+         </p>
+
+        <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+<ol class="list-decimal list-inside">
+    <li> Pour la pâte croquante : Dans un saladier, ajoutez en premier la farine tamisée, le sucre en poudre et le sel. Mélangez puis intégrez l’œuf.</li>
+    <br>
+    <li>Versez ensuite le cacao et la cannelle. Vous pouvez pétrir, la pâte doit devenir élastique. Réservez durant 1 heure.</li>
+    <br>
+    <li>Pour la crème de ricotta : Dans un second saladier, déposez la ricotta après l’avoir égouttée. Versez successivement le sucre vanillé, les zestes de citron et le sucre en poudre, puis mélangez l’ensemble. Terminez avec les fruits confits.</li>
+    <br>
+    <li>Puis étalez la pâte croquante avec un rouleau à pâtisserie pour la rendre uniforme. Formez tout d’abord des formes ovales. Enroulez alors autour de petits tubes siciliens conçus pour les cannoli.</li>
+    <br>
+    <li> Plongez les cannoli dans un bain d’huile de friture pour les rendre croquant. Ils doivent foncer. Réservez-les dans du papier absorbant. Laissez tiédir pour retirer les tubes.</li>
+    <br>
+    <li> Remplissez une poche à douille de crème de ricotta et garnissez les cannoli.</li>
+    <br>
+    <li> Aux extrémités, vous pouvez décorer de fruits confits, puis parsemer de sucre glace. Régalez-vous !</li>
+    <br>
+    
+    <strong>Les cocktails italiens</strong>
+    </div>
+    <br>
+    <img src="Cocktail-Cap-Horn.jpg.webp" alt="cocktail italien avec alcool" class="w-1/2"> 
+<div class="text-left max-w-lg">
+    <div></div>
+    <h2 class="text-2xl font-bold mt-8" id="Boissons">Cocktail-Cap-Horn</h2>  
+    <strong>Ingrédients</strong>
+    <p>
+        4cl de Rhum blanc Dillon <br>
+        2cl Triple sec <br>
+        1 trait Bitter Angostura <br>
+        1 trait Canadou <br>
+    </p>
+
+     <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+    <ol class="list-decimal list-inside">
+
+        <li>Ajoutez les ingrédients
+            Dans un verre à mélange, versez 4 cl de rhum blanc Dillon 55 °, 2 cl de triple sec, un trait de bitter et un trait de sirop de sucre de canne roux Canadou.</li>
+            <br>
+            <li>Mélangez avec une cuillère à mélange, tout doucement et de bas en haut, afin d’obtenir une boisson homogène.</li>
+            <br>
+            <li>Remplissez un verre old fashioned de glaçons.</li>
+            <br>
+            <li>Versez votre cocktail.</li>
+            <br>
+
+     <img src="spritz.jpg" alt="cocktail italien avec alcool" class="w-1/2">
+     <div class="text-left max-w-lg">
+     <h2 class="text-2xl font-bold mt-8">spritz</h2>  
+     <strong>Ingrédients</strong>
+     <p>
+        12 cl d’Aperol <br>
+        24 cl de Prosecco <br>
+        4 cl d’eau pétillante <br>
+        2 tranches d’orange non traitée <br>
+        6 glaçons <br>
+     </p>
+     
+     <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+     <ol class="list-decimal list-inside">
+        <li>Placez les glaçons dans vos verres.</li>
+        <br>
+        <li>Commencez par l’Aperol, complétez par le Prosecco et terminez par l’eau pétillante.</li>
+        <br>
+        <li>Déposez une tranche d’orange dans chaque verre.</li>
+        <br>
+        <li>Servez aussitôt avec une paille pour remuer et siroter votre cocktail bien frais !</li>
+
+        <img src="cocktail-dark-mule.jpg.webp" alt="cocktail italien avec alcool" class="w-1/2">
+     <div class="text-left max-w-lg">
+     <h2 class="text-2xl font-bold mt-8">Dark Mule</h2>  
+     <strong>Ingrédients</strong>
+        4 cl Rhum Black Spiced Rivière du Mât <br>
+        12 cl Ginger Beer La French SVP <br>
+        2 traits Bitter Angostura <br>
+        2 cl de Jus de citron vert pressé <br>
+     <p>
+
+        <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+        <ol class="list-decimal list-inside">
+            <li>Dans un verre rempli au 2/3 de glaçons. Versez 2 cl de citron vert pressé. Ajoutez les 12 cl de Ginger Beer La French SVP.</li>
+            <br>
+            <li>Mélangez vigoureusement pour homogénéiser le tout. Assombrissez votre préparation avec 4 cl de black spiced Rivière du Mât. Terminez votre cocktail Dark Mule en déposant 2 traits de bitter Angostu</li>
+            <br>
+            
+            <img src="cocktail-old-treacle-1.jpg.webp" alt="cocktail italien avec alcool" class="w-1/2">
+     <div class="text-left max-w-lg">
+     <h2 class="text-2xl font-bold mt-8">cocktail-old-treacle-1</h2>  
+     <strong>Ingrédients</strong>
+    <p>
+        5 cl Rhum ambré des îles Old Nick <br>
+        2 cl Sirop de vanille <br>
+        2 gouttes Bitter Angostura <br>
+        4 cl Jus de pomme <br>
+        1 baton Cannelle <br>
+    </p>
+        <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+        <ol class="list-decimal list-inside">
+            <li>Pour préparer ce cocktail, choisissez votre verre old fashioned préféré
+                 Versez-y directement 2 cl de sirop de vanille et 2 gouttes de bitter</li> 
+                 <br>
+            <li>Remuez doucement avec une cuillère à mélange pour bien incorporer les ingrédients.</li> 
+            <br>
+            <li>Remplissez ensuite le verre de glaçons jusqu’à mi-hauteur environ</li> 
+            <br>
+            <li>Versez 5 cl de rhum ambré des îles Old Nick et 4 cl de jus de pomme</li> 
+            <br>
+            <li>Mélangez à nouveau les ingrédients pour bien les intégrer.</li> 
+            <br>
+            <li>Complétez de glace à votre convenance.Votre Old Treacle est prêt : à déguster sans attendre</li> 
+            <br>
+            
+            <img src="cocktail-irish-venezzio.jpg.webp" alt="cocktail italien avec alcool" class="w-1/2">
+            <div class="text-left max-w-lg">
+            <h2 class="text-2xl font-bold mt-8">cocktail-irish-venezzio</h2>  
+            <strong>Ingrédients</strong>
+           <p>
+              8-10 grains de Café <br>
+              1 gousse Cardamome <br>
+              10 cl Bitter sans alcool Venezzio <br>
+              2 cl Irish Whiskey Paddy <br>
+          </p>
+           
+          <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+          <ol class="list-decimal list-inside">
+            <li>Dans un verre, écrasez au pilon 8 à 10 grains de café et une gousse de cardamome verte.</li> 
+            <br>
+            <li>Ajoutez quelques glaçons.</li>
+            <br>
+            <li>Versez le Venezzio Bitter et le Whiskey Paddy.</li>
+            <br>
+            <li>Vous pouvez décorer votre verre d’une demie-tranche d’orange et de menthe fraîche.</li>
+            <br>
+            <li>Votre cocktail est prêt !</li>
+            <br>
+
+            <strong>Les mocktails italiens</strong>
+
+            <img src="cocktail-goyave-framboise-basilique-sans-alcool.jpg" alt="mocktail italien" class="w-1/2">
+            <div class="text-left max-w-lg">
+            <h2 class="text-2xl font-bold mt-8">Le Basilika</h2>  
+            <strong>Ingrédients</strong>
+        <p>
+            12 cl de jus Goyave Framboise Caraïbos <br>
+            2 cl de sirop de citron <br>
+            6 feuilles de basilic frais <br>
+        </p>
+          <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+          <ol class="list-decimal list-inside">
+
+            <li>Dans un shaker, écrasez les feuilles de basilic à l’aide d’un pilon.</li>
+            <br>
+            <li>Ajoutez le sirop de citron et le jus Caraïbos Goyave-Framboise et shakez le tout.</li>
+            <br>
+            <li>Filtrez le mélange à l’aide d’une passoire fine ou en ajoutant un filtre à café au-dessus de votre verre, puis servez dans un verre long-drink. </li>
+            <br>
+            <li>Décorez votre cocktail de quelques feuilles de basilic frais, et savourez !</li>
+            <br>
+
+            <img src="recette-cocktail-the-mangue-maracuja.jpg" alt="mocktail italien" class="w-1/2">
+            <div class="text-left max-w-lg">
+            <h2 class="text-2xl font-bold mt-8">Tea-punch</h2>  
+            <strong>Ingrédients</strong>
+        <p>
+             5cl de Caraïbos Mangue <br>
+             4cl de Caraïbos Maracuja <br>
+             4cl de thé Earl Grey froid <br>
+             ¼ de citron vert pressé <br>
+             Du gingembre frais <br>
+        </p>
+          <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+          <ol class="list-decimal list-inside">
+
+            <li>faire infuser votre thé et laissez-le refroidir.</li>
+            <br>
+            <li>Dans un shaker ou une gourde, mélangez le Caraïbos Mangue, le Caraïbos Maracuja et le citron vert.</li>
+            <br>
+            <li>Dans un joli verre type Old Fashioned, écrasez le gingembre à l’aide d’une cuillère et ajoutez des glaçons.</li>
+            <br>
+            <li>Versez le mélange fruité et le thé dans le verre, décorez d’une petite tranche de citron vert et dégustez bien frais</li>
+            <br>
+
+        
+            <img src="cocktail-pineapple-express-luc-degroux.jpg" alt="mocktail italien" class="w-1/2">
+            <div class="text-left max-w-lg">
+            <h2 class="text-2xl font-bold mt-8">Pineapple express</h2>  
+            <strong>Ingrédients</strong>
+        <p>
+
+            6 cl Caraïbos Ananas <br>
+            4 cl Caraïbos Goyave <br>
+            2 cl Sirop de miel <br>
+            0.25ml vinaigre balsamique <br>
+            1 blanc d’oeuf <br>
+        </p>
+
+        <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+        <ol class="list-decimal list-inside">
+
+            <li>Dans un shaker ou une gourde, ajoutez les ingrédients dans l’ordre suivant : œuf, vinaigre, sirop puis les jus.</li>
+            <br>
+            <li>Remplissez ensuite le shaker de glaçons et mélangez énergiquement 15 secondes l’ensemble.</li>
+            <br>
+            <li>Séparez le liquide des glaçons (à l’aide d’une passoire), puis, remélangez énergiquement environ 10 sec. </li>
+            <br>
+            <li>Une fois le cocktail bien mélangé une mousse doit s’être formé, vous pouvez verser l’ensemble dans une coupette et décorer à votre goût.</li>
+            <br>
+
+            <img src="cocktail-caraibos-virgin-mansito.jpg" alt="mocktail italien" class="w-1/2">
+            <div class="text-left max-w-lg">
+            <h2 class="text-2xl font-bold mt-8">Virgin-mansito</h2>  
+            <strong>Ingrédients</strong>
+            <p>
+                3 cl de Caraïbos Calamansi <br>
+                3 cl de Caraïbos Ananas <br>
+                3 cl de jus de citron jaune <br>
+                6 cl de Tonic <br>
+                1 trait de grenadine <br>
+            </p>
+
+            <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+        <ol class="list-decimal list-inside">
+
+            <li>Dans un shaker ou une gourde, mélangez les trois jus de fruits. </li>
+            <br>
+            <li>Versez le tout dans un grand verre rempli de glaçons, ajoutez le tonic puis la grenadine</li>
+            <br>
+            <li>Dégustez bien frais.</li>
+            <br>
+
+             <img src="366574-le-bora-bora-un-cocktail-sans-alcool-orig-2-1536x1024.jpeg" alt="mocktail italien" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Bora_bora</h2>  
+             <strong>Ingrédients</strong>
+             <p>
+                10 cl de jus d’ananas <br>
+                6 cl de jus de fruit de la passion <br>
+                1 cl de jus de citron <br>
+                2 cl de sirop de grenadine  <br>
+                1 tranche d’orange <br>
+            </p>
+
+            
+            <h3 class="text-xl font-semibold mt-6">Préparation de la recette</h3>
+        <ol class="list-decimal list-inside">
+
+            <li>Remplissez-le shaker de glaçons</li>
+            <br>
+            <li>ajoutez-y un à un tous les ingrédients</li>
+            <br>
+            <li>Shakez ensuite le tout pendant 15 secondes</li>
+            <br>
+            <li> versez le mélange dans un verre tumbler en filtrant les glaçons.</li>
+            <br>
+            <li> décorer votre verre de tranches d’orange.</li>
+            <br>
+
+            <strong>Les bières italienness</strong>
+
+            <img src="1200044371_1_biere_baladin_nora_blonde_italie_68_33_cl_1624622605045.webp" alt="bière italienne" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Nora</h2>
+
+             <br>
+
+             <img src="1200049876_1_Baladin_rnr_33_cl_1616668422918.webp" alt="bière italienne" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Baladin</h2>
+
+             <strong>Les vins italiens</strong>
+
+             <img src="prosecco-doc-rose-brut-millesimato-2023-villa-arfanta.png" alt="vin italien" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Prosecco</h2>
+              
+            <br>
+
+            <img src="appassimento-wrap-around-2023-wrap-around-botter.png" alt="vin italien" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Appassimiento</h2>
+
+             <br>
+
+             <img src="gavi-ricossa-2023-botter.png" alt="vin italien" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">ricossa</h2> 
+            
+             <br>
+
+             <strong>Les alcools italiens</strong>
+
+             <img src="Gin-Beccaris-70cl-big__88127.jpg" alt="alcools italiens" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Gin Beccaris</h2>
+             
+             <br>
+
+             <img src="Marsala-Vergine-Soleras-Cantine-Vinci-75cl-big__37309.jpg" alt="alcools italiens" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Marsala</h2>
+
+             <br>
+
+             <img src="Capture d'écran 2024-11-26 161556.png" alt="alcools italiens" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Liqueur à la crème de melon</h2>
+
+             <br>
+
+             <strong>Les softs italiens</strong>
+
+             <img src="Molecola-33cl.jpg" alt="softs italiens" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">coca</h2>
+
+             <br>
+
+             <img src="the-citron-polara-275cl.jpg" alt="softs italiens" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Thé froid</h2>
+
+             <br>
+
+
+             <img src="gazzosa-traditionnelle-polara-275cl-1.jpg" alt="softs italiens" class="w-1/2">
+             <div class="text-left max-w-lg">
+             <h2 class="text-2xl font-bold mt-8">Limonade</h2>
+        </div>
+    </div>
+    </div>
+    <footer class="text-center py-4">
+     <p>&copy; Les Recettes italiennes</p>
+     <p>Cléo Monchieri</p>
+     <p>2024-2025</p>
+    </footer>
 </body>
-<footer>
-    Serge Lacombe-Formateur DWWM LESPARRE-MEDOC-Afpa Bégles 2024
-</footer>
 </html>
+     
